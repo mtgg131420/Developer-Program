@@ -1,39 +1,59 @@
 {
-  "name": "react-masonry",
-  "version": "1.0.0",
-  "description": "瀑布流",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./server.js",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lingziyb/react-masonry.git"
-  },
-  "keywords": [
-    "react",
-    "masonry"
-  ],
-  "author": "lingzi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lingziyb/react-masonry/issues"
-  },
-  "homepage": "https://github.com/lingziyb/react-masonry#readme",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "npm": "^6.12.1",
-    "parcel-bundler": "^1.12.4",
-    "parcel-proxy-server": "^1.1.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
-  },
-  "devDependencies": {
-    "@types/react": "^16.9.11",
-    "@types/react-dom": "^16.9.3",
-    "less": "^3.10.3",
-    "typescript": "^3.6.4"
-  }
+	"name": "@icedesign/website-homepage-scaffold",
+	"version": "1.0.0",
+	"description": "该模板适用于产品类的首页介绍，默认内置一个页面和五个不同风格的展示区块",
+	"homepage": "https://alibaba.github.io/ice/scaffold-preview/ice-website-homepage.html",
+	"dependencies": {
+		"@icedesign/base": "^0.2.0",
+		"@icedesign/container": "^0.1.0",
+		"@icedesign/ellipsis": "^0.1.2",
+		"@icedesign/icon": "^0.1.1",
+		"@icedesign/img": "^0.1.0",
+		"@icedesign/layout": "^0.1.2",
+		"@icedesign/menu": "^0.1.0",
+		"@icedesign/skin": "^0.1.0",
+		"axios": "^0.18.0",
+		"classnames": "^2.2.5",
+		"enquire-js": "^0.1.2",
+		"foundation-symbol": "^0.1.0",
+		"gulp": "^3.9.1",
+		"gulp-sftp": "^0.1.5",
+		"mockjs": "^1.0.1-beta3",
+		"prop-types": "^15.5.8",
+		"react": "^16.8.3",
+		"react-document-title": "^2.0.3",
+		"react-dom": "^16.8.3",
+		"react-quill": "^1.3.3",
+		"react-router": "^4.2.0",
+		"react-router-dom": "^4.2.2"
+	},
+	"devDependencies": {
+		"babel-eslint": "^8.0.3",
+		"eslint": "^4.13.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-plugin-babel": "^4.1.1",
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-jsx-a11y": "^6.0.3",
+		"eslint-plugin-react": "^7.5.1",
+		"ice-scripts": "^1.1.1"
+	},
+	"scripts": {
+		"start": "ice dev",
+		"build": "ice build",
+		"lint": "eslint . --ext '.js,.jsx' --fix"
+	},
+	"publishConfig": {
+		"registry": "http://registry.npmjs.com",
+		"access": "public"
+	},
+	"buildConfig": {
+		"theme": "@icedesign/skin",
+		"entry": "src/index.js"
+	},
+	"scaffoldConfig": {
+		"name": "ice-website-homepage",
+		"title": "ICE Website HomePage",
+		"screenshot": "https://img.alicdn.com/tfs/TB1lvtMpQOWBuNjSsppXXXPgpXa-2840-1596.png"
+	},
+	"title": "blog"
 }
